@@ -51,25 +51,25 @@
 #rm -rf openwrt-packages
 
 # 拉取 immortalwrt master 源码
-git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrt
+#git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrt
 # 提取 fullconenat-nft 源码
-cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
+#cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
 # 提取 fullconenat 源码
-cp -rf iwrt/package/network/utils/fullconenat package/network/utils/fullconenat
+#cp -rf iwrt/package/network/utils/fullconenat package/network/utils/fullconenat
 # 提取 default-settings 源码
 #cp -rf iwrt//package/emortal/default-settings package/default-settings
 # 删除 immortalwrt master 源码
-rm -rf iwrt
+#rm -rf iwrt
 
-git clone https://github.com/kiddin9/openwrt-packages
-shopt -s extglob
-rm -rf openwrt-packages/!(luci-app-netdata|luci-app-smartdns|luci-app-upnp)
-cp -r openwrt-packages/{luci-app-netdata,luci-app-smartdns,luci-app-upnp} package/
-rm -rf openwrt-packages
+#git clone https://github.com/kiddin9/openwrt-packages
+#shopt -s extglob
+#rm -rf openwrt-packages/!(luci-app-netdata|luci-app-smartdns|luci-app-upnp)
+#cp -r openwrt-packages/{luci-app-netdata,luci-app-smartdns,luci-app-upnp} package/
+#rm -rf openwrt-packages
 
-git clone https://github.com/coolsnowwolf/lede 
-cp -r lede/package/lean/{r8168,r8125,r8152,r8101} package/
-rm -rf lede
+#git clone https://github.com/coolsnowwolf/lede 
+#cp -r lede/package/lean/{r8168,r8125,r8152,r8101} package/
+#rm -rf lede
 
 
 #删除feeds自带mosdns、v2ray-geodata
@@ -81,13 +81,13 @@ rm -rf feeds/luci/themes/luci-theme-BootstrapDark
 rm -rf feeds/luci/themes/luci-theme-BootstrapLight
 
 cd package
-git clone https://github.com/f8q8/luci-app-autoreboot.git
+#git clone https://github.com/f8q8/luci-app-autoreboot.git
 git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git
 git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
 cd ..
 
-git clone --depth=1 -b master https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 
 
