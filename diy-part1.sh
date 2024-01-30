@@ -69,7 +69,7 @@
 
 #git clone https://github.com/coolsnowwolf/lede 
 #cp -r lede/package/lean/{r8168,r8125,r8152,r8101} package/
-#rm -rf lede
+rm -rf lede/package/lean/r8101
 
 
 #删除feeds自带mosdns、v2ray-geodata
