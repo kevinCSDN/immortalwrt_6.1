@@ -69,41 +69,36 @@
 
 #git clone https://github.com/coolsnowwolf/lede 
 #cp -r lede/package/lean/{r8168,r8125,r8152,r8101} package/
-rm -rf package/lean/r8101
+#rm -rf package/lean/r8101
 
 
 #删除feeds自带mosdns、v2ray-geodata
-rm -rf ./feeds/packages/net/mosdns
-rm -rf feeds/packages/net/v2ray-geodata
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf feeds/luci/themes/luci-theme-Bootstrap
-rm -rf feeds/luci/themes/luci-theme-BootstrapDark
-rm -rf feeds/luci/themes/luci-theme-BootstrapLight
 
-cd package
+
+#cd package
 #git clone https://github.com/f8q8/luci-app-autoreboot.git
-git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git
-git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
-cd ..
+#git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git
+#git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
+#cd ..
 
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+#git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+#git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 
 
 
 #克隆passwall环境插件
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/pwpage
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/pwpage
 
 #克隆的源码放在small文件夹,预先建立small文件夹
-mkdir package/small
-pushd package/small
+#mkdir package/small
+#pushd package/small
 
 #克隆源码
 
 #passwall2
-git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git
-git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
+#git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git
+#git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
 #mosdns
 # git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git
 #git clone --depth=1 https://github.com/fw876/helloworld.git
@@ -113,4 +108,4 @@ git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
 
 # git clone https://github.com/kevinCSDN/luci-app-vssr-plus.git  
 
-popd
+#popd
