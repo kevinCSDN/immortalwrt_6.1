@@ -85,7 +85,7 @@
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 
-
+git clone --depth=1 https://github.com/derisamedia/luci-theme-alpha package/luci-theme-alpha
 
 #克隆passwall环境插件
 #git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/pwpage
